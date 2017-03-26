@@ -1,0 +1,4 @@
+main-class = com.creatorfromhell.core.canary.CanaryPluginLoader
+name = ExamplePlugin
+author = creatorfromhell
+version = 0.0.1
