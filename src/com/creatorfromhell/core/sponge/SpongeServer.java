@@ -7,14 +7,18 @@ import com.creatorfromhell.core.sponge.event.player.PlayerQuitListener;
 import com.creatorfromhell.core.uapi.ServerType;
 import com.creatorfromhell.core.uapi.UPluginLoader;
 import com.creatorfromhell.core.uapi.UServer;
+import com.creatorfromhell.core.uapi.entity.Player;
 import com.creatorfromhell.core.uapi.event.player.PlayerConnectEvent;
 import com.creatorfromhell.core.uapi.event.player.PlayerJoinEvent;
 import com.creatorfromhell.core.uapi.event.player.PlayerKickEvent;
 import com.creatorfromhell.core.uapi.event.player.PlayerLeaveEvent;
+import com.creatorfromhell.core.uapi.world.World;
 import org.spongepowered.api.Sponge;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 public class SpongeServer extends UServer {
 
@@ -51,4 +55,53 @@ public class SpongeServer extends UServer {
     }
   }
 
+  @Override
+  public Player getPlayer(String name) {
+    return null;
+  }
+
+  @Override
+  public Player getPlayer(UUID uuid) {
+    return null;
+  }
+
+  @Override
+  public void broadcast(String s) {
+
+  }
+
+  @Override
+  public void broadcast(String s, String s1) {
+
+  }
+
+  @Override
+  public String getName() {
+    return null;
+  }
+
+  @Override
+  public String getIP() {
+    return null;
+  }
+
+  @Override
+  public String getVersion() {
+    return null;
+  }
+
+  @Override
+  public int getMaxPlayers() {
+    return 0;
+  }
+
+  @Override
+  public World getDefaultWorld() {
+    return null;
+  }
+
+  @Override
+  public List<World> getWorlds() {
+    return null;
+  }
 }
